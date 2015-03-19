@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="favicon.png" />
+<title>Strip indent ▲ Prism plugins</title>
+<base href="../.." />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="themes/prism.css" data-noprefix />
+<script src="prefixfree.min.js"></script>
+
+<script>var _gaq = [['_setAccount', 'UA-33746269-1'], ['_trackPageview']];</script>
+<script src="http://www.google-analytics.com/ga.js" async></script>
+</head>
+<body>
+
+<header>
+  <div class="intro" data-src="templates/header-plugins.html" data-type="text/html"></div>
+
+  <h2>Strip indent</h2>
+  <p>Strips newlines and whitespaces between <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> blocks when highlighting.</p>
+</header>
+
+<section>
+  <h1>How to use</h1>
+  <p>Under normally circumstances, Prism does not touch newlines and whitespaces between <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> blocks, resulting in weird indentation and empty lines. This plugin strips them, so you don’t have to.</p>
+  <pre>
+    <code class="language-markup">&lt;pre&gt;
+    &lt;code class="language-javascript"&gt;/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ * MIT license http://www.opensource.org/licenses/mit-license.php/
+ * @author Lea Verou http://lea.verou.me
+ */&lt;/code&gt;
+&lt;/pre&gt;</code>
+  </pre>
+</section>
+
+<section>
+  <h1>Example</h1>
+
+  <p>The above example, highlighted with this plugin turned on:</p>
+  <pre>
+    <code class="language-javascript">/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ * MIT license http://www.opensource.org/licenses/mit-license.php/
+ * @author Lea Verou http://lea.verou.me
+ */</code>
+  </pre>
+</section>
+
+<footer data-src="templates/footer.html" data-type="text/html"></footer>
+
+<script src="prism.js"></script>
+<script src="plugins/strip-indent/prism-strip-indent.js"></script>
+<script src="utopia.js"></script>
+<script src="components.js"></script>
+<script src="code.js"></script>
+
+
+</body>
+</html>
